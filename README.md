@@ -34,6 +34,15 @@ Rails Helpers
       include PlaceKitten::Helpers
     end
 
+    # in your views:
+    <%= image_tag placekitten(400, 500) %>
+    <%= image_tag placekitten_gray(400, 500) %>
+
+Contributing
+------------
+
+Just fork the project, create a topic branch, push your changes, and issue a Pull Request. Avoid changing `Rakefile` or `VERSION` (or do it in a separate commit so I can skip pulling those changes).
+
 License
 -------
 
