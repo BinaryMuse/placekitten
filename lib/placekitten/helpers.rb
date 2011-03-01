@@ -1,9 +1,12 @@
 module PlaceKitten::Helpers
-  def placekitten(width = 200, height = 300, grayscale = false)
+  # @see PlaceKitten.image
+  def placekitten(width = nil, height = nil, grayscale = false)
     PlaceKitten.image(width, height, grayscale)
   end
 
-  def placekitten_gray(width = 200, height = 300)
+  # @see PlaceKitten.grayscale
+  def placekitten_grayscale(width = nil, height = nil)
     PlaceKitten.grayscale(width, height)
   end
+  alias placekitten_gray placekitten_grayscale
 end

@@ -12,4 +12,9 @@ class KittenRailsTest < Test::Unit::TestCase
     image = placekitten_gray(400, 500)
     assert_equal "http://placekitten.com/g/400/500", image
   end
+
+  def test_placekitten_grayscale_helper
+    image = placekitten_grayscale(400, 500)
+    assert_equal "http://placekitten.com/g/400/500", image
+  end
 end
